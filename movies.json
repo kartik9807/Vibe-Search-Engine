@@ -1,0 +1,492 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Sci-Fi",
+    "plot": "A skilled thief enters people's dreams to steal secrets but is tasked with planting an idea in someone's mind."
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "plot": "A group of astronauts travel through a wormhole in search of a new home for humanity."
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action",
+    "plot": "Batman faces the Joker, a criminal mastermind determined to plunge Gotham into chaos."
+  },
+  {
+    "id": 4,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "genre": "Action",
+    "plot": "The Avengers assemble once more to undo the damage caused by Thanos and restore balance to the universe."
+  },
+  {
+    "id": 5,
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "genre": "Action",
+    "plot": "Spider-Man's identity is revealed and he seeks help from Doctor Strange, opening the door to the multiverse."
+  },
+  {
+    "id": 6,
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "plot": "A group of misfit criminals in space must work together to stop a powerful villain."
+  },
+  {
+    "id": 7,
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genre": "Action",
+    "plot": "In a desert wasteland, Max teams up with Furiosa to escape a tyrant and rescue enslaved women."
+  },
+  {
+    "id": 8,
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Sci-Fi",
+    "plot": "A young nobleman must travel to a dangerous desert planet to secure the future of his family and people."
+  },
+  {
+    "id": 9,
+    "title": "Avatar",
+    "year": 2009,
+    "genre": "Sci-Fi",
+    "plot": "A soldier on an alien planet becomes torn between following orders and protecting the world he grows to love."
+  },
+  {
+    "id": 10,
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "genre": "Sci-Fi",
+    "plot": "Jake Sully and his family explore new regions of Pandora while facing renewed threats from humans."
+  },
+  {
+    "id": 11,
+    "title": "Frozen",
+    "year": 2013,
+    "genre": "Animation",
+    "plot": "A princess sets out to find her sister whose magical ice powers have frozen their kingdom."
+  },
+  {
+    "id": 12,
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genre": "Animation",
+    "plot": "Woody, Buzz, and the rest of the toys face an uncertain future when their owner grows up."
+  },
+  {
+    "id": 13,
+    "title": "Finding Dory",
+    "year": 2016,
+    "genre": "Animation",
+    "plot": "Dory embarks on a journey to reunite with her long-lost parents."
+  },
+  {
+    "id": 14,
+    "title": "Encanto",
+    "year": 2021,
+    "genre": "Animation",
+    "plot": "A magical family in Colombia must confront the loss of their powers while discovering their true strengths."
+  },
+  {
+    "id": 15,
+    "title": "The Incredibles",
+    "year": 2004,
+    "genre": "Animation",
+    "plot": "A family of superheroes tries to live a normal life but must return to action to save the world."
+  },
+  {
+    "id": 16,
+    "title": "La La Land",
+    "year": 2016,
+    "genre": "Romance",
+    "plot": "An aspiring actress and a jazz musician fall in love while pursuing their dreams in Los Angeles."
+  },
+  {
+    "id": 17,
+    "title": "The Fault in Our Stars",
+    "year": 2014,
+    "genre": "Romance",
+    "plot": "Two teenagers with cancer fall in love and share an unforgettable journey."
+  },
+  {
+    "id": 18,
+    "title": "Crazy Rich Asians",
+    "year": 2018,
+    "genre": "Romance",
+    "plot": "A woman travels to Singapore to meet her boyfriend's wealthy family and faces unexpected challenges."
+  },
+  {
+    "id": 19,
+    "title": "Get Out",
+    "year": 2017,
+    "genre": "Thriller",
+    "plot": "A young man uncovers disturbing secrets when visiting his girlfriend's family estate."
+  },
+  {
+    "id": 20,
+    "title": "A Quiet Place",
+    "year": 2018,
+    "genre": "Thriller",
+    "plot": "A family must live in silence to survive creatures that hunt by sound."
+  },
+  {
+    "id": 21,
+    "title": "Gone Girl",
+    "year": 2014,
+    "genre": "Thriller",
+    "plot": "A man becomes the prime suspect when his wife mysteriously disappears."
+  },
+  {
+    "id": 22,
+    "title": "Knives Out",
+    "year": 2019,
+    "genre": "Mystery",
+    "plot": "A detective investigates the death of a wealthy novelist surrounded by suspicious family members."
+  },
+  {
+    "id": 23,
+    "title": "The Hangover",
+    "year": 2009,
+    "genre": "Comedy",
+    "plot": "Three friends retrace their chaotic night in Las Vegas to find their missing groom."
+  },
+  {
+    "id": 24,
+    "title": "Superbad",
+    "year": 2007,
+    "genre": "Comedy",
+    "plot": "Two high school friends attempt to enjoy one last wild party before graduation."
+  },
+  {
+    "id": 25,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Comedy",
+    "plot": "A hotel concierge and his lobby boy become involved in a murder mystery and a stolen painting."
+  },
+  {
+    "id": 26,
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": "Drama",
+    "plot": "The story behind the creation of Facebook and the lawsuits that followed."
+  },
+  {
+    "id": 27,
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": "Drama",
+    "plot": "A talented drummer faces intense pressure from a demanding music instructor."
+  },
+  {
+    "id": 28,
+    "title": "Joker",
+    "year": 2019,
+    "genre": "Drama",
+    "plot": "A struggling comedian descends into madness and becomes the infamous Joker."
+  },
+  {
+    "id": 29,
+    "title": "Black Panther",
+    "year": 2018,
+    "genre": "Action",
+    "plot": "The king of Wakanda must defend his nation from enemies and internal conflicts."
+  },
+  {
+    "id": 30,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "genre": "Sci-Fi",
+    "plot": "A woman discovers she must connect with alternate versions of herself to save the multiverse."
+  },
+  {
+    "id": 31,
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "genre": "Adventure",
+    "plot": "Archaeologist Indiana Jones races against Nazis to find the legendary Ark of the Covenant, a powerful biblical artifact."
+  },
+  {
+    "id": 32,
+    "title": "Indiana Jones and the Temple of Doom",
+    "year": 1984,
+    "genre": "Adventure",
+    "plot": "Indiana Jones journeys to India where he must recover a mystical stone and rescue kidnapped children."
+  },
+  {
+    "id": 33,
+    "title": "Indiana Jones and the Last Crusade",
+    "year": 1989,
+    "genre": "Adventure",
+    "plot": "Indiana Jones teams up with his father to search for the legendary Holy Grail before the Nazis can find it."
+  },
+  {
+    "id": 34,
+    "title": "The Goonies",
+    "year": 1985,
+    "genre": "Adventure",
+    "plot": "A group of kids discover an ancient pirate treasure map and set out on a dangerous adventure to find hidden treasure."
+  },
+  {
+    "id": 35,
+    "title": "Romancing the Stone",
+    "year": 1984,
+    "genre": "Adventure",
+    "plot": "A romance novelist travels to Colombia to rescue her sister and gets caught up in a jungle treasure hunt."
+  },
+  {
+    "id": 36,
+    "title": "The Jewel of the Nile",
+    "year": 1985,
+    "genre": "Adventure",
+    "plot": "An adventurous couple travels across the Middle East searching for a legendary treasure."
+  },
+  {
+    "id": 37,
+    "title": "Big Trouble in Little China",
+    "year": 1986,
+    "genre": "Adventure",
+    "plot": "A truck driver gets caught in a supernatural adventure while helping his friend rescue a kidnapped woman."
+  },
+  {
+    "id": 38,
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": "Sci-Fi",
+    "plot": "A teenager accidentally travels back in time in a scientist's time machine and must ensure his parents fall in love."
+  },
+  {
+    "id": 39,
+    "title": "The Princess Bride",
+    "year": 1987,
+    "genre": "Adventure",
+    "plot": "A farm boy sets out on a swashbuckling quest filled with pirates, sword fights, and true love."
+  },
+  {
+    "id": 40,
+    "title": "Labyrinth",
+    "year": 1986,
+    "genre": "Fantasy",
+    "plot": "A teenage girl journeys through a magical labyrinth to rescue her baby brother from the Goblin King."
+  },
+  {
+    "id": 41,
+    "title": "The NeverEnding Story",
+    "year": 1984,
+    "genre": "Fantasy",
+    "plot": "A young boy reads a magical book that pulls him into a fantasy world where he must save the land from destruction."
+  },
+  {
+    "id": 42,
+    "title": "Crocodile Dundee",
+    "year": 1986,
+    "genre": "Adventure",
+    "plot": "An Australian bushman travels to New York City and finds himself in a series of humorous adventures."
+  },
+  {
+    "id": 43,
+    "title": "Willow",
+    "year": 1988,
+    "genre": "Fantasy",
+    "plot": "A farmer and an unlikely group of warriors set out on a quest to protect a magical baby from an evil queen."
+  },
+  {
+    "id": 44,
+    "title": "The Adventures of Baron Munchausen",
+    "year": 1988,
+    "genre": "Adventure",
+    "plot": "An eccentric storyteller embarks on fantastical adventures involving mythical creatures and hidden treasures."
+  },
+  {
+    "id": 45,
+    "title": "High Road to China",
+    "year": 1983,
+    "genre": "Adventure",
+    "plot": "A pilot is hired to help a wealthy woman find her missing father on a dangerous journey across Asia."
+  },
+  {
+    "id": 46,
+    "title": "The Mask of Zorro",
+    "year": 1998,
+    "genre": "Adventure",
+    "plot": "A young thief is trained by the original Zorro to take down a corrupt governor and seek revenge."
+  },
+  {
+    "id": 47,
+    "title": "The Three Musketeers",
+    "year": 1993,
+    "genre": "Adventure",
+    "plot": "A young man travels to Paris to join the Musketeers and becomes embroiled in a plot to overthrow the king."
+  },
+  {
+    "id": 48,
+    "title": "The Conjuring",
+    "year": 2013,
+    "genre": "Horror",
+    "plot": "Paranormal investigators Ed and Lorraine Warren help a family terrorized by a dark presence in their farmhouse."
+  },
+  {
+    "id": 49,
+    "title": "Hereditary",
+    "year": 2018,
+    "genre": "Horror",
+    "plot": "A grieving family begins to unravel terrifying secrets after the death of their secretive grandmother."
+  },
+  {
+    "id": 50,
+    "title": "The Exorcism of Emily Rose",
+    "year": 2005,
+    "genre": "Horror",
+    "plot": "A priest faces trial after performing an exorcism that led to a young woman's death."
+  },
+  {
+    "id": 51,
+    "title": "It",
+    "year": 2017,
+    "genre": "Horror",
+    "plot": "A group of kids in a small town confront a terrifying clown that feeds on fear."
+  },
+  {
+    "id": 52,
+    "title": "The Babadook",
+    "year": 2014,
+    "genre": "Horror",
+    "plot": "A single mother and her son are haunted by a sinister presence that emerges from a mysterious children's book."
+  },
+  {
+    "id": 53,
+    "title": "Alien",
+    "year": 1979,
+    "genre": "Horror",
+    "plot": "The crew of a spaceship encounters a deadly extraterrestrial creature that begins hunting them one by one."
+  },
+  {
+    "id": 54,
+    "title": "The Shining",
+    "year": 1980,
+    "genre": "Horror",
+    "plot": "A writer staying in an isolated hotel with his family slowly descends into madness as supernatural forces haunt them."
+  },
+  {
+    "id": 55,
+    "title": "Doctor Sleep",
+    "year": 2019,
+    "genre": "Horror",
+    "plot": "Years after the events of The Shining, Danny Torrance protects a young girl with similar psychic powers from a dangerous cult."
+  },
+  {
+    "id": 56,
+    "title": "Train to Busan",
+    "year": 2016,
+    "genre": "Horror",
+    "plot": "Passengers on a high-speed train fight to survive when a zombie outbreak spreads across South Korea."
+  },
+  {
+    "id": 57,
+    "title": "World War Z",
+    "year": 2013,
+    "genre": "Horror",
+    "plot": "A former UN investigator races against time to stop a global zombie pandemic."
+  },
+  {
+    "id": 58,
+    "title": "Edge of Tomorrow",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "plot": "A soldier caught in a time loop repeatedly relives the same battle against alien invaders."
+  },
+  {
+    "id": 59,
+    "title": "Arrival",
+    "year": 2016,
+    "genre": "Sci-Fi",
+    "plot": "A linguist is recruited by the military to communicate with mysterious extraterrestrial visitors."
+  },
+  {
+    "id": 60,
+    "title": "Gravity",
+    "year": 2013,
+    "genre": "Sci-Fi",
+    "plot": "Two astronauts struggle to survive after their space shuttle is destroyed in orbit."
+  },
+  {
+    "id": 61,
+    "title": "The Martian",
+    "year": 2015,
+    "genre": "Sci-Fi",
+    "plot": "An astronaut stranded on Mars must rely on science and ingenuity to survive."
+  },
+  {
+    "id": 62,
+    "title": "Jurassic World",
+    "year": 2015,
+    "genre": "Adventure",
+    "plot": "A dinosaur theme park descends into chaos when a genetically modified dinosaur escapes."
+  },
+  {
+    "id": 63,
+    "title": "Jumanji: Welcome to the Jungle",
+    "year": 2017,
+    "genre": "Adventure",
+    "plot": "Four teenagers are sucked into a magical video game world and must complete a quest to escape."
+  },
+  {
+    "id": 64,
+    "title": "Sherlock Holmes",
+    "year": 2009,
+    "genre": "Mystery",
+    "plot": "Detective Sherlock Holmes and Dr. Watson investigate a series of mysterious crimes in London."
+  },
+  {
+    "id": 65,
+    "title": "Murder on the Orient Express",
+    "year": 2017,
+    "genre": "Mystery",
+    "plot": "Detective Hercule Poirot investigates a murder aboard a luxurious train."
+  },
+  {
+    "id": 66,
+    "title": "Deadpool",
+    "year": 2016,
+    "genre": "Comedy",
+    "plot": "A wisecracking mercenary with accelerated healing hunts down the man who ruined his life."
+  },
+  {
+    "id": 67,
+    "title": "Free Guy",
+    "year": 2021,
+    "genre": "Comedy",
+    "plot": "A bank teller discovers he is actually a background character inside an open-world video game."
+  },
+  {
+    "id": 68,
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genre": "Horror",
+    "plot": "Two lighthouse keepers on a remote island slowly descend into paranoia and madness as isolation and strange events take their toll."
+  },
+  {
+    "id": 69,
+    "title": "Us",
+    "year": 2019,
+    "genre": "Horror",
+    "plot": "A family's vacation turns terrifying when mysterious doppelgängers appear and begin to terrorize them."
+  },
+  {
+    "id": 70,
+    "title": "The Invisible Man",
+    "year": 2020,
+    "genre": "Thriller",
+    "plot": "A woman believes she is being stalked by her abusive ex-boyfriend who has found a way to become invisible."
+  }
+]
