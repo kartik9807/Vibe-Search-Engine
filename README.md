@@ -62,3 +62,6 @@ The frontend dynamically renders movie cards.
 **Google Gemini API (AI recommendations)**
 
 **TMDB API (posters and ratings)**
+
+<img width="1920" height="921" alt="image" src="https://github.com/user-attachments/assets/4749768c-f5bd-4667-a1ad-54774753516a" />
+
