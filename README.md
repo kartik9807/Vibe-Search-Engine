@@ -45,20 +45,20 @@ The frontend dynamically renders movie cards.
 
 - Frontend
 
-* HTML *
+**HTML**
 
-* CSS *
+**CSS**
 
-* Vanilla JavaScript *
+**Vanilla JavaScript**
 
 - Backend
 
-* Node.js *
+**Node.js**
 
-* Express.js *
+**Express.js**
 
-* APIs *
+**APIs**
 
-*Google Gemini API (AI recommendations)*
+**Google Gemini API (AI recommendations)**
 
-*TMDB API (posters and ratings)*
+**TMDB API (posters and ratings)**
