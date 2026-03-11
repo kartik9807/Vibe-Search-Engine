@@ -1,25 +1,4 @@
-#
-🛠️ Tech Stack
-
-Frontend
-
-HTML
-
-CSS
-
-Vanilla JavaScript
-
-Backend
-
-Node.js
-
-Express.js
-
-APIs
-
-Google Gemini API (AI recommendations)
-
-TMDB API (posters and ratings)🎬 Vibe Search – AI Movie Recommendation Engine
+#🎬 Vibe Search – AI Movie Recommendation Engine
 
 Vibe Search is an AI-powered movie recommendation web application that understands natural language movie queries. Instead of filtering movies by rigid categories, users can describe the vibe of the movie they want, and the system intelligently recommends the best matches.
 
@@ -61,3 +40,25 @@ The server matches those IDs with the dataset.
 The app fetches posters and ratings from TMDB API.
 
 The frontend dynamically renders movie cards.
+
+🛠️ Tech Stack
+
+Frontend
+
+HTML
+
+CSS
+
+Vanilla JavaScript
+
+Backend
+
+Node.js
+
+Express.js
+
+APIs
+
+Google Gemini API (AI recommendations)
+
+TMDB API (posters and ratings)
