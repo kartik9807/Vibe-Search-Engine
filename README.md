@@ -57,7 +57,7 @@ The frontend dynamically renders movie cards.
 
 **Express.js**
 
-**APIs**
+- APIs
 
 **Google Gemini API (AI recommendations)**
 
