@@ -16,14 +16,14 @@ The app uses Google Gemini AI to interpret user intent and recommend the top mov
 
 ## 🚀 Features
 
--✅ Natural language movie search
--✅ AI-powered recommendation using Gemini API
--✅ Intelligent movie matching based on plot, genre, and year
--✅ Dynamic movie cards with poster and details
--✅ Movie posters and ratings fetched from TMDB API
--✅ Interactive UI with loading states and suggestions
--✅ Error-tolerant poster fetching using Promise.allSettled()
--✅ Clean responsive layout with flexbox
+- ✅ Natural language movie search
+- ✅ AI-powered recommendation using Gemini API
+- ✅ Intelligent movie matching based on plot, genre, and year
+- ✅ Dynamic movie cards with poster and details
+- ✅ Movie posters and ratings fetched from TMDB API
+- ✅ Interactive UI with loading states and suggestions
+- ✅ Error-tolerant poster fetching using Promise.allSettled()
+- ✅ Clean responsive layout with flexbox
 
 ## 🧠 How It Works
 
@@ -45,19 +45,19 @@ The frontend dynamically renders movie cards.
 
 - Frontend
 
-*HTML*
+* HTML *
 
-*CSS*
+* CSS *
 
-*Vanilla JavaScript*
+* Vanilla JavaScript *
 
-*Backend*
+- Backend
 
-*Node.js*
+* Node.js *
 
-*Express.js*
+* Express.js *
 
-*APIs*
+* APIs *
 
 *Google Gemini API (AI recommendations)*
 
