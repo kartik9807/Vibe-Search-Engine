@@ -1,8 +1,12 @@
 import { GoogleGenAI } from "@google/genai";
 import express from "express";
+import { fileURLToPath } from "url"; 
+import path from "path";             
 import fs from "fs";
 import dotenv from "dotenv";
 dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = 3000;
@@ -10,7 +14,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-const data = fs.readFileSync("movies.json", "utf-8");
+const data = fs.readFileSync(path.join(__dirname, "movies.json"), "utf-8");
 
 app.post("/search", async (req, res) => {
   if(data.length === 0 || `${data}` === "undefined"){
