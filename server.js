@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = 3000;
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
