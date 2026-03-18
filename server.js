@@ -29,7 +29,6 @@ app.post("/search", async (req, res) => {
     contents: prompt,
   });
   // inserting the response into the webpage
-  console.log("AI Response:", response.text);
   res.json({ results: response.text , movieData: JSON.parse(data) });
 });
 
@@ -54,11 +53,7 @@ app.get("/movieData", async (req, res) => {
         await new Promise(r => setTimeout(r, attempt * 500));
       }
     }
-    console.log(`Title searched: "${title}"`);
-    console.log(`Results count: ${data.results?.length}`);
-    data.results?.forEach((m, i) => {
-      console.log(`  [${i}] ${m.title} (${m.release_date}) — poster: ${m.poster_path}`);
-    });
+
 
     if (!data.results || data.results.length === 0) {
       return res.json({ poster: "default.png", rating: "NA" });
