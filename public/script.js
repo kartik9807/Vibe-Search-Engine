@@ -8,17 +8,6 @@ Array.from(liButton).forEach((li)=>{
     })
 });    
 
-//https://developer.themoviedb.org/reference/search-movie
-async function getPosterandRating(title){
-    const api_key="7bb8b77115ec6779435f9083c0894b32";
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${encodeURIComponent(title)}`);
-    const data = await response.json();
-    if (!data.results || data.results.length === 0) {
-        return "default.png";
-    }
-    console.log(data.results);
-    return data.results;
-}
 searchButton.addEventListener("click", async () => {
     const resultContainer = document.getElementById("resultsContainer");
     resultContainer.className = "loading";
@@ -49,6 +38,7 @@ searchButton.addEventListener("click", async () => {
         },
         body: JSON.stringify({ query:query })
     }); 
+
     const data = await response.json();
     const movieData = data.movieData;
     console.log("Response from server:", data);
@@ -73,22 +63,41 @@ searchButton.addEventListener("click", async () => {
     const recommendations = JSON.parse(match[0]);
     const recommendedMovies = movieData.filter(movie => recommendations.some(rec => rec.id === movie.id));
     resultContainer.innerHTML = `<h1 class="heading">Top 3 Recommendations</h1>`;
+    
+    //https://developer.themoviedb.org/reference/search-movie
+    async function getPosterandRating(title, year) {
+        const yearParam = year ? `&year=${year}` : ""; // for more precise movieData response
+        const response = await fetch(`/movieData?title=${encodeURIComponent(title)}${yearParam}`);
+        const data = await response.json();
+        if (!data || !data.poster) {
+            return { poster: "default.png", rating: "NA" };
+        }
+        return data;
+    }
+//? r is the "resolve" function
+//? when setTimeout finishes waiting → it calls r → Promise completes
+//? But setTimeout alone can't be awaited — it doesn't return a Promise.
 
-    const cardsHTML = await Promise.all(recommendedMovies.map(async (movie, index) => {
-        const posterData = await getPosterandRating(movie.title);
-        const posterURL = `https://image.tmdb.org/t/p/w500${posterData[0].poster_path}`;
-        return  `<div class="card" id="card">
-                    <div class="poster">
-                        <img src="${posterURL}" alt="img">
-                        <div class="rating">${posterData[0].vote_average.toFixed(2)}</div>
-                    </div>
-                    <div class="details">
-                        <div class="movieTitle"><span>TITLE</span> :- ${movie.title || "N/A"}</div>
-                        <div class="genre"><span>GENRE</span> :- ${movie.genre || "N/A"}</div>
-                        <div class="plot"><span>PLOT</span> :- ${movie.plot || "N/A"}</div>
-                        <div class="reason"><span>REASON</span> :- ${recommendations[index]?.reason || "N/A"}</div>
-                    </div>
-                </div>`;
-    }));
+    const delay = ms => new Promise(r => setTimeout(r, ms));
+
+    const cardsHTML = [];
+    for (let i = 0; i < recommendedMovies.length; i++) {
+        const movie = recommendedMovies[i];
+        if (i > 0) await delay(300); // wait 300ms between each request
+        const posterData = await getPosterandRating(movie.title, movie.year);
+        const rec = recommendations.find(r => r.id === movie.id);
+        cardsHTML.push(`<div class="card" id="card">
+            <div class="poster">
+                <img src="${posterData.poster}" alt="img">
+                <div class="rating">${posterData.rating}</div>
+            </div>
+            <div class="details">
+                <div class="movieTitle"><span>TITLE</span> :- ${movie.title || "N/A"}</div>
+                <div class="genre"><span>GENRE</span> :- ${movie.genre || "N/A"}</div>
+                <div class="plot"><span>PLOT</span> :- ${movie.plot || "N/A"}</div>
+                <div class="reason"><span>REASON</span> :- ${rec?.reason || "N/A"}</div>
+            </div>
+        </div>`);
+    }
     resultContainer.innerHTML += `<div class="searchResults">${cardsHTML.join("")}</div>`;
 });
