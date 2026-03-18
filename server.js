@@ -33,6 +33,53 @@ app.post("/search", async (req, res) => {
   res.json({ results: response.text , movieData: JSON.parse(data) });
 });
 
+const tmdb_keys = process.env.TMDB_API_KEY;
+app.get("/movieData", async (req, res) => {
+  try {
+    const title = req.query.title;
+    const year = req.query.year;
+    const yearParam = year ? `&year=${year}` : "";
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${tmdb_keys}&query=${encodeURIComponent(title)}${yearParam}`;
+
+    let data;
+    // retry system if the api fail to get data
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const response = await fetch(url);
+        data = await response.json();
+        break;
+      } catch (err) {
+        console.log(`Attempt ${attempt} failed for "${title}": ${err.message}`);
+        if (attempt === 3) throw err;
+        await new Promise(r => setTimeout(r, attempt * 500));
+      }
+    }
+    console.log(`Title searched: "${title}"`);
+    console.log(`Results count: ${data.results?.length}`);
+    data.results?.forEach((m, i) => {
+      console.log(`  [${i}] ${m.title} (${m.release_date}) — poster: ${m.poster_path}`);
+    });
+
+    if (!data.results || data.results.length === 0) {
+      return res.json({ poster: "default.png", rating: "NA" });
+    }
+
+    const movie =
+      data.results.find(m => m.poster_path && m.title.toLowerCase() === title.toLowerCase()) ||
+      data.results.find(m => m.poster_path) ||
+      data.results[0];
+
+    const poster = movie.poster_path
+      ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+      : "default.png";
+
+    res.json({ poster, rating: movie.vote_average ?? "NA" });
+
+  } catch (err) {
+    console.error("TMDB error:", err);
+    res.json({ poster: "default.png", rating: "NA" });
+  }
+});
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
